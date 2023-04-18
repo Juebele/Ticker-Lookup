@@ -3,7 +3,7 @@ var APIKey = "THQL4CERPJNZS1CR"
 // receive ticker input from user
 var ticker = logTicker()
 // receive currency type from user
-var currencyType =""
+var currencyType = logCurrency()
 // add URL for ticker search API
 var tickerURL = "https://www.alphavantage.co/query?function=TIME_SERIES_WEEKLY_ADJUSTED&symbol=IBM&apikey=THQL4CERPJNZS1CR"; 
 // add URL for forex API
@@ -44,4 +44,9 @@ getForexApi()
 function logTicker() {
     let ticker = document.getElementById("tickerBar").value;
     console.log(ticker)
+}
+
+function logCurrency() {
+    let currency = document.getElementById("currencyBar").value;
+    console.log(currency)
 }
