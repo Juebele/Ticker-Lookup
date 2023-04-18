@@ -1,17 +1,17 @@
 
 var APIKey = "THQL4CERPJNZS1CR"
 // receive ticker input from user
-var ticker = logTicker()
+var ticker = ""
 // receive currency type from user
 var currencyType = logCurrency()
 // add URL for ticker search API
-var tickerURL = "https://www.alphavantage.co/query?function=TIME_SERIES_WEEKLY_ADJUSTED&symbol=IBM&apikey=THQL4CERPJNZS1CR"; 
+var tickerURL = "https://www.alphavantage.co/query?function=TIME_SERIES_WEEKLY_ADJUSTED&symbol=" + ticker + "&apikey=THQL4CERPJNZS1CR"; 
 // add URL for forex API
 var forexURL = "https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=JPY&apikey=THQL4CERPJNZS1CR"
 
 
 function getTickerApi() {
-    fetch(tickerURL)
+    fetch("https://www.alphavantage.co/query?function=TIME_SERIES_WEEKLY_ADJUSTED&symbol=" + ticker + "&apikey=THQL4CERPJNZS1CR")
     .then(function (response) {
         console.log(response);
         if (response.status === 200) {
@@ -44,6 +44,8 @@ getForexApi()
 function logTicker() {
     let ticker = document.getElementById("tickerBar").value;
     console.log(ticker)
+    console.log("https://www.alphavantage.co/query?function=TIME_SERIES_WEEKLY_ADJUSTED&symbol=" + ticker + "&apikey=THQL4CERPJNZS1CR")
+    getTickerApi()
 }
 
 function logCurrency() {
