@@ -48,4 +48,6 @@ function fetchCurrency() {
         .then(function (data) {
             console.log(data);
         })
+
+        document.getElementById("#currency-span").innerHTML = "hello"
     }
