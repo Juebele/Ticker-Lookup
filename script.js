@@ -9,38 +9,6 @@ var tickerURL = "https://www.alphavantage.co/query?function=TIME_SERIES_WEEKLY_A
 // add URL for forex API
 var forexURL = "https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=" + currencyType + "&apikey=THQL4CERPJNZS1CR";
 
-
-function getTickerApi() {
-    fetch(tickerURL)
-    .then(function (response) {
-        console.log(response);
-        if (response.status === 200) {
-            response.textContent = response.status;
-        }
-        return response.json();
-    })
-    .then(function (data) {
-        console.log(data);
-    })
-}
-
-
-function getForexApi() {
-    fetch(forexURL)
-    .then(function (response) {
-        console.log(response);
-        if (response.status === 200) {
-            response.textContent = response.status;
-        }
-        return response.json();
-    })
-    .then(function (data) {
-        console.log(data);
-    })
-}
-getTickerApi()
-getForexApi()
-
 function fetchTicker() {
     ticker = document.getElementById("tickerBar").value;
     console.log(ticker)
