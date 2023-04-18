@@ -38,9 +38,3 @@
 // }
 
 // // console.log(windspeed)
-
-var indeedURL = "https://www.indeed.com/m/?from=gnav-homepage";
-
-async function getJobs () {
-    
-}
