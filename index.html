@@ -23,11 +23,17 @@
     <!-- this is for the search bar, top movers, and forex sections -->
     <div id="second-row" class="container justify-content-md-center text-center text-bg-secondary p-3">
     <div class="row align-items-start">
-        <div id="ticker-box" class="text-bg-success p-3 col-2">Ticker search</div>
-        <div id="top-three-box" class="text-bg-success p-3 col-4">Top three</div>
+        <div id="ticker-box" class="text-bg-success p-3 col-2">Ticker search
+            <div class="input-group-sm mb-3 "></div>
+            <input id="tickerBar" type="text" class="form-control" placeholder="Ticker Symbol" aria-label="ticker-symbol" aria-describedby="basic-addon1">
+            <button id="tickerBtn" type="button" onclick="logTicker()">Search</button>
+        </div>
+    
+    <div id="top-three-box" class="text-bg-success p-3 col-4">Top three</div>
         <div id="exchange-rate-box" class="text-bg-success p-3 col-6">Exchange rate</div>
     </div>
     </div>
+</div>
     <!-- this is for the ticker output and favorites list -->
     <div id="main" class=" container justify-content-md-center text-center text-bg-primary">
     <div class="row align-items-start">
