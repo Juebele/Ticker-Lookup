@@ -13,7 +13,8 @@
 <body>
     <!-- this is the top of the page -->
     <header id="header" class="container text-center text-bg-primary p-3">
-        <div class="row align-items-start">
+
+<div class="row align-items-start">
             <div class="col-8">
                 <h1>Welcome to our site</h1>
             </div>
@@ -23,14 +24,26 @@
     <!-- this is for the search bar, top movers, and forex sections -->
     <div id="second-row" class="container justify-content-md-center text-center text-bg-secondary p-3">
     <div class="row align-items-start">
-        <div id="ticker-box" class="text-bg-success p-3 col-2">Ticker search
-            <div class="input-group-sm mb-3 "></div>
+        <div id="ticker-box" class="text-bg-success p-3 col-2">
+            Ticker search
+        <div class="input-group-sm mb-3 ">
             <input id="tickerBar" type="text" class="form-control" placeholder="Ticker Symbol" aria-label="ticker-symbol" aria-describedby="basic-addon1">
-            <button id="tickerBtn" type="button" onclick="logTicker()">Search</button>
+            <button id="tickerBtn" type="button" onclick="fetchTicker()">Search</button>
+        </div>
         </div>
     
-    <div id="top-three-box" class="text-bg-success p-3 col-4">Top three</div>
-        <div id="exchange-rate-box" class="text-bg-success p-3 col-6">Exchange rate</div>
+    <div id="top-three-box" class="text-bg-success p-3 col-4">
+        Top three
+    </div>
+
+    <div id="currency-box" class="text-bg-success p-3 col-6">
+        Exchange rate
+        <div class="input-group-sm mb-3 ">
+            <input id="currencyBar" type="text" class="form-control" placeholder="Currency type" aria-label="currency-type" aria-describedby="basic-addon1">
+            <button id="currencyBtn" type="button" onclick="logCurrency()">Search</button>
+        </div>
+    </div>
+
     </div>
     </div>
 </div>
