@@ -30,7 +30,6 @@
     <div id="second-row" class="container justify-content-md-center text-center text-bg-secondary p-3">
     <div class="row align-items-start">
         <div id="ticker-box" class="text-bg-success p-3 col-3">
-            Ticker search
         <div class="input-group-sm mb-3 ">
             <input id="tickerBar" type="text" class="form-control" placeholder="Ticker Symbol" aria-label="ticker-symbol" aria-describedby="basic-addon1">
             <button id="tickerBtn" type="button" onclick="fetchTicker()">Search</button>
@@ -38,11 +37,12 @@
         </div>
     
     <div id="top-three-box" class="text-bg-success p-3 col-6">
-        Top three
+        <img src="./assets/stonks.jpg" alt="stonks guy" height="200px" width="300px" id="image-box">
+        <!-- Top three -->
     </div>
 
     <div id="currency-box" class="text-bg-success p-3 col-3">
-        Exchange rate
+        Exchange rate from dollars
         <div class="input-group-sm mb-3 ">
             <input id="currencyBar" type="text" class="form-control" placeholder="Currency type" aria-label="currency-type" aria-describedby="basic-addon1">
             <button id="currencyBtn" type="button" onclick="fetchCurrency()">Search</button>
