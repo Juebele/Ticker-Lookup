@@ -16,6 +16,9 @@ function fetchTicker() {
     ticker = document.getElementById("tickerBar").value;
     console.log(ticker)
 
+    localStorage.setItem("symbol", ticker);
+    console.log(localStorage);
+
     var tickerURL = "https://www.alphavantage.co/query?function=OVERVIEW&symbol=" + ticker + "&apikey=THQL4CERPJNZS1CR"; 
 
     fetch(tickerURL)
@@ -56,7 +59,7 @@ function fetchCurrency() {
         })
         .then(function (data) {
             console.log(data);
-            document.getElementById("currency-span").innerHTML = data["Realtime Currency Exchange Rate"]["5. Exchange Rate"];
+            document.getElementById("currency-span").innerHTML = "1 dollar will get you " + data["Realtime Currency Exchange Rate"]["5. Exchange Rate"]; + " of the currency you requested."
         })
 
     }
