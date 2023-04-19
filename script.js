@@ -1,13 +1,16 @@
 
 var APIKey = "THQL4CERPJNZS1CR"
 // receive ticker input from user
+// add URL for ticker search API
 let ticker
 // receive currency type from user
+
 let currencyType
 // add URL for ticker search API
 var tickerURL = "https://www.alphavantage.co/query?function=OVERVIEW&symbol=" + ticker + "&apikey=THQL4CERPJNZS1CR"; 
 // add URL for forex API
 var forexURL = "https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=" + currencyType + "&apikey=THQL4CERPJNZS1CR";
+
 
 function fetchTicker() {
     ticker = document.getElementById("tickerBar").value;
