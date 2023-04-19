@@ -1,4 +1,6 @@
-
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+}
 
 :root {
     --color-1: #6096B4;
@@ -35,19 +37,16 @@ img {
 }
 
 .header-row {
-    border-color: var(--color-2);
     border-style:solid;
     border-width: 15px;
 }
 
 .second-row {
-    border-color: var(--color-2);
     border-style:solid;
     border-width: 15px;
 }
 
 .first-row {
-    border-color: var(--color-2);
     border-style:solid;
     border-width: 15px;
 }
