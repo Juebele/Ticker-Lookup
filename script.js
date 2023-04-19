@@ -30,7 +30,7 @@ function fetchTicker() {
             document.getElementById("52-high-span").innerHTML = "52-week High: " + data["52WeekHigh"];
             document.getElementById("52-low-span").innerHTML = "52-week Low: " + data["52WekLow"];
             document.getElementById("PE-ratio-span").innerHTML = "PE Ratio: " + data["PERatio"];
-            document.getElementById("industry-span").innerHTML = "Industry" + data["Industry"];
+            document.getElementById("industry-span").innerHTML = "Industry: " + data["Industry"];
         })
     }
 
