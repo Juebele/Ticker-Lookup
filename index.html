@@ -14,54 +14,55 @@
 </head>
 <body>
     <!-- this is the top of the page -->
-    <header id="header" class="container text-center text-bg-success p-3">
+    <header id="header" class="container text-center text-bg-info p-3">
         <div class="row align-items-start">
-            <div class="col-8">
+            <div class="row align-items-start">
                 <h1>Welcome to our site</h1>
             </div>
-            <div class="col-4">
-                <a href="https://site.financialmodelingprep.com/">Best Market Research</a>
-                <a href="https://valueinvesting.io/">Comprehensive Market Data</a>
-                <a href="https://alpharesearch.io/">Indepth Market Analysis</a>
+            <div class="align-items-end">
+                <a href="https://site.financialmodelingprep.com/ " target="_blank">Best Market Research</a>
+                <a href="https://valueinvesting.io/" target="_blank">Comprehensive Market Data</a>
+                <a href="https://alpharesearch.io/" target="_blank">Indepth Market Analysis</a>
             </div>
             
         </div>
     </header>
-    <!-- this is for the search bar, top movers, and forex sections -->
-    <div id="second-row" class="container justify-content-md-center text-center text-bg-secondary p-3">
-    <div class="row align-items-start">
 
-        <div id="ticker-box" class="text-bg-success p-3 col-3">
-        <div class="input-group-sm mb-3 ">
-    
+    <!-- this is for the search bar, stonks guy, and forex sections -->
+<div id="second-row" class="container text-center text-bg-secondary">
+    <div class="row align-items-center">
+
+        <div id="ticker-box" class="text-bg-info p-3 col-3">
+        <div class="input-group-sm mb-3">
+            <h5>Look up any ticker symbol here</h5>
             <input id="tickerBar" type="text" class="form-control" placeholder="Ticker Symbol" aria-label="ticker-symbol" aria-describedby="basic-addon1">
-            <button id="tickerBtn" type="button" onclick="logTicker()">Search</button>
+            <button id="tickerBtn" type="button" onclick="fetchTicker()">Search</button>
         </div>
-    
-
-    <div id="top-three-box" class="text-bg-success p-3 col-6">
-        <img src="./assets/stonks.jpg" alt="stonks guy" height="200px" width="300px" id="image-box">
-        <!-- Top three -->
-    </div>
-
-    <div id="currency-box" class="text-bg-success p-3 col-3">
-        Exchange rate from dollars
-        <div class="input-group-sm mb-3 ">
-            <input id="currencyBar" type="text" class="form-control" placeholder="Currency type" aria-label="currency-type" aria-describedby="basic-addon1">
-            <button id="currencyBtn" type="button" onclick="fetchCurrency()">Search</button>
-            <span id="currency-span"></span>
         </div>
-    </div>
 
+        <div id="stonks-box" class="text-bg-info p-3 col-6">
+            <img src="./assets/stonks.jpg" alt="stonks guy" height="200px" width="300px" id="image-box">
+        </div>
 
-    </div>
+        <div id="currency-box" class="text-bg-info p-3 col-3">
+            <div class="input-group-sm mb-3 ">
+                <h5>Exchange rate from dollars</h5>
+                <input id="currencyBar" type="text" class="form-control" placeholder="Currency type" aria-label="currency-type" aria-describedby="basic-addon1">
+                <button id="currencyBtn" type="button" onclick="fetchCurrency()">Search</button>
+                <span id="currency-span"></span>
+            </div>
+        </div>
+        
+        
+
     </div>
 </div>
     <!-- this is for the ticker output and favorites list -->
     <div id="main" class=" container justify-content-md-center text-center text-bg-primary">
     <div class="row align-items-start">
-        <div id="company-info-box" class="col-9 text-bg-success p-3">Company info results
+        <div id="company-info-box" class="text-start col-9 text-bg-info p-3">
             <div class="row">
+                <h2>Stock Info</h2>
                 <span id="ticker-symbol-span">Ticker Symbol:</span>
                 <span id="share-price-span">Share Price:</span>
                 <span id="industry-span">Industry:</span>
@@ -70,7 +71,7 @@
                 <span id="PE-ratio-span">PE Ratio:</span>
             </div>
         </div>
-        <div id="favorites-box" class="col-3 text-bg-success p-3">Recent Searches
+        <div id="favorites-box" class="col-3 text-bg-info p-3">Recent Searches
             <ol id="search-list">
                 <li id="search-1"></li>
                 <li id="search-2"></li>
@@ -82,7 +83,8 @@
     <!-- this is a handsome footer for our page -->
     <footer id="footer" class="container text-center text-bg-secondary p-3">
         <div class="row align-items-start">
-            <div class="row-2 text-start">Contributors:
+            <div class="col text-start">
+                <h5>Contributors:</h5>
                 <ul>
                     <li>Chelsea Curry</li>
                     <li>Cole Carter</li>
@@ -90,8 +92,7 @@
                     <li>Rehman Qureshi</li>
                 </ul>
             </div>
-            <div class="col-8"></div>
-            <div class="col-3 text-end">Creation date: 04-18-2023</div>
+            <div class="col text-end">Created on: 18 April 2023</div>
         </div>
     </footer>
     <!-- necessary script files -->
