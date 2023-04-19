@@ -86,7 +86,7 @@ function fetchCurrency() {
         })
         .then(function (data) {
             console.log(data);
-            document.getElementById("currency-span").innerHTML = "1 dollar will get you " + data["Realtime Currency Exchange Rate"]["5. Exchange Rate"]; + " of the currency you requested."
+            document.getElementById("currency-span").innerHTML = "1 dollar will get you " + data["Realtime Currency Exchange Rate"]["5. Exchange Rate"] + " " + data["Realtime Currency Exchange Rate"]["3. To_Currency Code"];
         })
 
     }
