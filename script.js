@@ -61,7 +61,7 @@ function fetchTicker() {
             document.getElementById("ticker-symbol-span").innerHTML = "Ticker Symbol: " + data["Symbol"];
             document.getElementById("share-price-span").innerHTML = "Analyst Price: " + data["AnalystTargetPrice"];
             document.getElementById("52-high-span").innerHTML = "52-week High: " + data["52WeekHigh"];
-            document.getElementById("52-low-span").innerHTML = "52-week Low: " + data["52WekLow"];
+            document.getElementById("52-low-span").innerHTML = "52-week Low: " + data["52WeekLow"];
             document.getElementById("PE-ratio-span").innerHTML = "PE Ratio: " + data["PERatio"];
             document.getElementById("industry-span").innerHTML = "Industry: " + data["Industry"];
         })
