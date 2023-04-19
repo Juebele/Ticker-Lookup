@@ -14,22 +14,19 @@
 </head>
 <body>
     <!-- this is the top of the page -->
-    <header id="header" class="container text-center text-bg-info p-3">
-        <div class="row align-items-start">
+    <header id="header" class="container text-center p-3 light-class header-row card">
+        <div class="light-class">
             <div class="row align-items-start">
                 <h1>Welcome to our site</h1>
             </div>
-
-            
-            
         </div>
     </header>
 
     <!-- this is for the search bar, stonks guy, and forex sections -->
-<div id="second-row" class="container text-center text-bg-secondary">
+<div class="container text-center light-class first-row card">
     <div class="row align-items-center">
 
-        <div id="ticker-box" class="text-bg-info p-3 col-3">
+        <div id="ticker-box" class="p-3 col-3">
         <div class="input-group-sm mb-3">
             <h5>Look up any ticker symbol here</h5>
             <input id="tickerBar" type="text" class="form-control" placeholder="Ticker Symbol" aria-label="ticker-symbol" aria-describedby="basic-addon1">
@@ -37,27 +34,24 @@
         </div>
         </div>
 
-        <div id="stonks-box" class="text-bg-info p-3 col-6">
+        <div id="stonks-box" class="p-3 col-6">
             <img src="./assets/stonks.jpg" alt="stonks guy" height="200px" width="300px" id="image-box">
         </div>
 
-        <div id="currency-box" class="text-bg-info p-3 col-3">
-            <div class="input-group-sm mb-3">
+        <div id="currency-box" class="row p-3 col-3">
+            <div class="row input-group-sm mb-3">
                 <h5>Exchange rate from dollars</h5>
                 <input id="currencyBar" type="text" class="form-control" placeholder="Currency type" aria-label="currency-type" aria-describedby="basic-addon1">
                 <button id="currencyBtn" type="button" onclick="fetchCurrency()">Search</button>
                 <span id="currency-span"></span>
             </div>
         </div>
-        
-        
-
     </div>
 </div>
     <!-- this is for the ticker output and favorites list -->
-    <div id="main" class=" container justify-content-md-center text-center text-bg-info">
-    <div class="row align-items-start">
-        <div id="company-info-box" class="text-start col-9 text-bg-info p-3">
+    <div id="main" class="container justify-content-md-center text-center light-class second-row card">
+    <div class="row align-items-start second-card">
+        <div id="company-info-box" class="row text-start col-8 p-3 light-class">
             <div class="row">
                 <h2>Stock Info</h2>
                 <span id="ticker-symbol-span">Ticker Symbol:</span>
@@ -68,9 +62,9 @@
                 <span id="PE-ratio-span">PE Ratio:</span>
             </div>
         </div>
-        <div id="favorites-box" class="col-3 text-bg-info p-3">
+        <div id="favorites-box" class="row text-end col-3 light-class p-3">
             <h4>Recent Searches</h4>
-            <ol id="search-list">
+            <ol id="search-list" class="list-unstyled">
                 <li id="search-1"></li>
                 <li id="search-2"></li>
                 <li id="search-3"></li>
@@ -79,7 +73,7 @@
     </div>
     </div>
     <!-- this is a handsome footer for our page -->
-    <footer id="footer" class="container text-center text-bg-secondary p-3">
+    <footer id="footer" class="container text-center footer-card p-3 card">
         <div class="row align-items-start">
             <div class="col text-start">
                 <h5>Contributors:</h5>
@@ -92,9 +86,12 @@
             </div>
 
             <div id="links" class="col align-items-end">
-                <a href="https://site.financialmodelingprep.com/ " target="_blank">Best Market Research</a>
-                <a href="https://valueinvesting.io/" target="_blank">Comprehensive Market Data</a>
-                <a href="https://alpharesearch.io/" target="_blank">Indepth Market Analysis</a>
+                <ul class="list-unstyled">
+                    <h6>Outside Links</h6>
+                    <li><a href="https://site.financialmodelingprep.com/ " target="_blank">Best Market Research</a></li>
+                    <li><a href="https://valueinvesting.io/" target="_blank">Comprehensive Market Data</a></li>
+                    <li><a href="https://alpharesearch.io/" target="_blank">Indepth Market Analysis</a></li>
+                </ul>
             </div>
 
             <div class="col text-end">

@@ -1,15 +1,16 @@
+
+
 :root {
-    --color-1: B5F1CC;
-    --color-2: E5FDD1;
-    --color-3: C9F4AA;
-    --color-4: FCC2FC;
+    --color-1: #6096B4;
+    --color-2: #E5FDD1;
+    --color-3: #C9F4AA;
+    --color-4: #FCC2FC;
 }
 
 
 a{
     text-decoration: none;
     color: black;
-    background-color: aquamarine;
     border-radius: 5px;
 }
 
@@ -22,6 +23,67 @@ img {
     height: auto;
   }
 
-  .test-class {
+.light-class {
     background-color: var(--color-1);
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.pink-class {
+    background-color: var(--color-4)
+}
+
+.header-row {
+    border-color: var(--color-2);
+    border-style:solid;
+    border-width: 15px;
+}
+
+.second-row {
+    border-color: var(--color-2);
+    border-style:solid;
+    border-width: 15px;
+}
+
+.first-row {
+    border-color: var(--color-2);
+    border-style:solid;
+    border-width: 15px;
+}
+
+.test-class {
+    border-radius: 15px;
+}
+
+
+.card {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+    padding: 10px;
+    flex: 0 0 300px;
+    margin: auto;
   }
+
+  .first-card div{
+    background-color:beige;
+    padding: 10px;
+  }
+
+  .second-card div{
+    background-color:beige;
+    padding: 10px;
+  }
+
+.card img{
+    border-radius: 15px;
+}
+
+.card div {
+    background-color: ;
+}
+
+.footer-card {
+    background-color: #EDE4E0;
+}
