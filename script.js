@@ -9,12 +9,38 @@ var tickerURL = "https://www.alphavantage.co/query?function=OVERVIEW&symbol=" + 
 // add URL for forex API
 var forexURL = "https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=" + currencyType + "&apikey=THQL4CERPJNZS1CR";
 
+let searchHistory = JSON.parse(localStorage.getItem("searchHistory")) || [];
+
+function populateRecents() {
+    document.getElementById("search-1").innerHTML = (searchHistory)[0];
+    document.getElementById("search-2").innerHTML = (searchHistory)[1];
+    document.getElementById("search-3").innerHTML = (searchHistory)[2];
+    }
+
 function fetchTicker() {
     ticker = document.getElementById("tickerBar").value;
     console.log(ticker)
 
+    let searchHistory = JSON.parse(localStorage.getItem("searchHistory")) || [];
+
+    searchHistory.unshift(ticker);
+
+    searchHistory.splice(3);
+
+    localStorage.setItem("searchHistory", JSON.stringify(searchHistory));
+
+    console.log(searchHistory);
+
     localStorage.setItem("symbol", ticker);
     console.log(localStorage);
+
+    var symbol = localStorage.getItem("symbol");
+    console.log(document.getElementById("search-1"))
+    console.log(document.getElementById("search-2"))
+    console.log(document.getElementById("search-3"))
+    document.getElementById("search-1").innerHTML = (searchHistory)[0];
+    document.getElementById("search-2").innerHTML = (searchHistory)[1];
+    document.getElementById("search-3").innerHTML = (searchHistory)[2];
 
     var tickerURL = "https://www.alphavantage.co/query?function=OVERVIEW&symbol=" + ticker + "&apikey=THQL4CERPJNZS1CR"; 
 
@@ -60,3 +86,5 @@ function fetchCurrency() {
         })
 
     }
+
+    window.onload = populateRecents()
