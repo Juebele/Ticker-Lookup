@@ -84,7 +84,7 @@ function fetchTicker() {
 
 
         })
-
+    }
 
 function fetchCurrency() {
     let currencyType = document.getElementById("currencyBar").value;
