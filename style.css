@@ -25,6 +25,10 @@ a:visited {
     color: black;
 }
 
+a:hover {
+    color: black;
+}
+
 img {
     width: 50%;
     height: auto;
