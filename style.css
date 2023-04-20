@@ -25,6 +25,10 @@ a:visited {
     color: black;
 }
 
+a:hover {
+    color: black;
+}
+
 img {
     width: 50%;
     height: auto;
@@ -89,10 +93,10 @@ a:hover {
     border-radius: 15px;
 }
 
-.middle {
+/* .middle {
     margin-top: 10px;
     margin-bottom: 10px;
-}
+} */
 
 .footer-card {
     background-color: #EDE4E0;
