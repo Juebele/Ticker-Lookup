@@ -1,3 +1,5 @@
+// // Invalid Search Modal
+// var myModal = new bootstrap.Modal("#error-modal");
 
 var APIKey = "THQL4CERPJNZS1CR"
 // receive ticker input from user
@@ -62,8 +64,8 @@ function fetchTicker() {
             console.log(response);
             if (response.status === 200) {
                 response.textContent = response.status;
-            }
-            return response.json();
+                return response.json();
+            } 
         })
         .then(function (data) {
             if (data["Symbol"] == undefined) {
@@ -80,8 +82,8 @@ function fetchTicker() {
             document.getElementById("PE-ratio-span").innerHTML = "PE Ratio: " + data["PERatio"];
             document.getElementById("industry-span").innerHTML = "Industry: " + data["Industry"];
 
+
         })
-    }
 
 
 function fetchCurrency() {
@@ -95,14 +97,22 @@ function fetchCurrency() {
     fetch(forexURL)
         .then(function (response) {
             console.log(response);
-            if (response.status === 200) {
+            if (response.status !== 200) {
+                response.textContent = innerHTML("Sorry, no data found")
+            } else {
                 response.textContent = response.status;
+                return response.json();
             }
-            return response.json();
         })
         .then(function (data) {
             console.log(data);
-            document.getElementById("currency-span").innerHTML = "1 dollar will get you " + data["Realtime Currency Exchange Rate"]["5. Exchange Rate"] + " " + data["Realtime Currency Exchange Rate"]["3. To_Currency Code"];
+
+            document.getElementById("currency-span").innerHTML = data["Realtime Currency Exchange Rate"]["5. Exchange Rate"];
+            if (data["5. Exchange Rate"] == undefined) {
+                data.textContent = "Sorry, no data found"
+                console.log(data.textContent)
+        }
+
         })
 
     }
