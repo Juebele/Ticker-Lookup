@@ -20,6 +20,9 @@ function populateRecents() {
     document.getElementById("search-1").innerHTML = (searchHistory)[0];
     document.getElementById("search-2").innerHTML = (searchHistory)[1];
     document.getElementById("search-3").innerHTML = (searchHistory)[2];
+    document.getElementById("search-4").innerHTML = (searchHistory)[3];
+    document.getElementById("search-5").innerHTML = (searchHistory)[4];
+    document.getElementById("search-6").innerHTML = (searchHistory)[5];
     }
 
 
@@ -31,7 +34,7 @@ function fetchTicker() {
 
     searchHistory.unshift(ticker);
 
-    searchHistory.splice(3);
+    searchHistory.splice(6);
 
     localStorage.setItem("searchHistory", JSON.stringify(searchHistory));
 
@@ -44,9 +47,15 @@ function fetchTicker() {
     console.log(document.getElementById("search-1"))
     console.log(document.getElementById("search-2"))
     console.log(document.getElementById("search-3"))
+    console.log(document.getElementById("search-4"))
+    console.log(document.getElementById("search-5"))
+    console.log(document.getElementById("search-6"))
     document.getElementById("search-1").innerHTML = (searchHistory)[0];
     document.getElementById("search-2").innerHTML = (searchHistory)[1];
     document.getElementById("search-3").innerHTML = (searchHistory)[2];
+    document.getElementById("search-4").innerHTML = (searchHistory)[3];
+    document.getElementById("search-5").innerHTML = (searchHistory)[4];
+    document.getElementById("search-6").innerHTML = (searchHistory)[5];
 
     var tickerURL = "https://www.alphavantage.co/query?function=OVERVIEW&symbol=" + ticker + "&apikey=THQL4CERPJNZS1CR"; 
 
@@ -59,19 +68,23 @@ function fetchTicker() {
             } 
         })
         .then(function (data) {
-            console.log(data);
+            if (data["Symbol"] == undefined) {
+                console.log(data)
+                alert("Sorry, that's not a valid ticker")
+                console.log(data);
+                return;
+            }
+            
             document.getElementById("ticker-symbol-span").innerHTML = "Ticker Symbol: " + data["Symbol"];
             document.getElementById("share-price-span").innerHTML = "Analyst Price: " + data["AnalystTargetPrice"];
             document.getElementById("52-high-span").innerHTML = "52-week High: " + data["52WeekHigh"];
             document.getElementById("52-low-span").innerHTML = "52-week Low: " + data["52WeekLow"];
             document.getElementById("PE-ratio-span").innerHTML = "PE Ratio: " + data["PERatio"];
             document.getElementById("industry-span").innerHTML = "Industry: " + data["Industry"];
-            if (data["Symbol"] == undefined) {
-                data.textContent = "Sorry, no data found"
-                console.log(data.textContent)
-        }
-        }) 
-    }
+
+
+        })
+
 
 function fetchCurrency() {
     let currencyType = document.getElementById("currencyBar").value;

@@ -15,31 +15,30 @@
 </head>
 <body>
     <!-- this is the top of the page -->
-    <header id="header" class="text-center p-3 light-class header-row card">
+    <header id="header" class="text-center p-3 light-class card">
         <div class="light-class">
             <div class="row align-items-start">
-                <h1>Welcome to our site</h1>
+                <h1 id="title">Welcome to our site, fellow Stonkbrokers</h1>
             </div>
         </div>
     </header>
 
     <!-- this is for the search bar, stonks guy, and forex sections -->
-<div class=" text-center light-class first-row card">
+<div class=" text-center light-class card middle">
     <div class="row align-items-center">
 
-        <div id="ticker-box" class="p-3 col-3">
-        <div class="input-group-sm mb-3">
+        <div id="ticker-box" class="p-3 col type-box">
+        <div class="row input-group-sm mb-3">
             <h5>Look up any ticker symbol here</h5>
             <input id="tickerBar" type="text" class="form-control" placeholder="Ticker Symbol" aria-label="ticker-symbol" aria-describedby="basic-addon1">
             <button id="tickerBtn" type="button" onclick="fetchTicker()">Search</button>
         </div>
         </div>
-
-        <div id="stonks-box" class="p-3 col-6">
-            <img src="./assets/stonks hiq.jpg" alt="stonks guy" height="200px" width="300px" id="image-box">
+        <div id="stonks-box" class="p-3 col">
+            <img src="./assets/stonks_meme.jpg" alt="stonks guy" height="200px" width="300px" id="image-box">
         </div>
 
-        <div id="currency-box" class="row p-3 col-3">
+        <div id="currency-box" class="row p-3 col type-box">
             <div class="row input-group-sm mb-3">
                 <h5>Exchange rate from dollars</h5>
                 <input id="currencyBar" type="text" class="form-control" placeholder="Currency type" aria-label="currency-type" aria-describedby="basic-addon1">
@@ -52,7 +51,7 @@
 </div>
     <!-- this is for the ticker output and favorites list -->
     <div id="main" class=" justify-content-md-center text-center light-class second-row card">
-    <div class="row align-items-start second-card">`
+    <div class="row second-card align-items-center">`
         <div id="company-info-box" class="row text-start col-8 p-3 light-class">
             <div class="row">
                 <h2>Stock Info</h2>
@@ -70,6 +69,9 @@
                 <li id="search-1"></li>
                 <li id="search-2"></li>
                 <li id="search-3"></li>
+                <li id="search-4"></li>
+                <li id="search-5"></li>
+                <li id="search-6"></li>
             </ol>
         </div>
     </div>
