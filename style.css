@@ -9,6 +9,11 @@
     --color-4: #FCC2FC;
 }
 
+#title {
+    color:#fff;
+    font-size: 50px;
+}
+
 
 a{
     text-decoration: none;
@@ -23,6 +28,7 @@ a:visited {
 img {
     width: 50%;
     height: auto;
+    min-width: 250px;
   }
 
 .light-class {
@@ -34,11 +40,6 @@ img {
 
 .pink-class {
     background-color: var(--color-4)
-}
-
-.header-row {
-    border-style:solid;
-    border-width: 15px;
 }
 
 .second-row {
@@ -66,20 +67,21 @@ a:hover {
 }
 .card {
     border-style: solid;
-    border-width: 1px;
+    border-width: 10px;
     border-radius: 15px;
     padding: 10px;
     flex: 0 0 300px;
     margin: auto;
   }
 
-  .first-card div{
-    background-color:beige;
-    padding: 10px;
+  .type-box {
+    background-color: #d3d3d3;
+    border-radius: 15px;
+    margin: 15px;
   }
 
   .second-card div{
-    background-color:beige;
+    background-color: #d3d3d3;
     padding: 10px;
   }
 
@@ -87,8 +89,9 @@ a:hover {
     border-radius: 15px;
 }
 
-.card div {
-    background-color: ;
+.middle {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .footer-card {
