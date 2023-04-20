@@ -56,7 +56,15 @@ img {
     border-radius: 15px;
 }
 
+a:hover {
+    background-color: lightblue;
+    color: black;
+  }
 
+#Github-logo {
+    height: 26px;
+    width: 26px;
+}
 .card {
     border-style: solid;
     border-width: 10px;
