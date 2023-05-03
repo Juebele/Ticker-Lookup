@@ -14,4 +14,4 @@
 >### The same process can be done to obtain the exchange rate from USD to a given foreign currency.
 
 ## How does it work?
->### When the search button is clicked, the user input is concattenated with a URL and then the site makes an API call specific to the requested ticker before returning financial data for that company. A very similar process is used to return foreign currency exchange rate data. Search terms are saved to local storage and populated to the "Recent Searches" box. These search terms are stored in an array which will delete the oldest search term once six ticker symbols have been searched.
+>### When the search button is clicked, the user input is concatenated with a URL and then the site makes an API call specific to the requested ticker before returning financial data for that company. A very similar process is used to return foreign currency exchange rate data. Search terms are saved to local storage and populated to the "Recent Searches" box. These search terms are stored in an array which will delete the oldest search term once six ticker symbols have been searched.
