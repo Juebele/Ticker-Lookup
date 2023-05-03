@@ -3,15 +3,12 @@
 }
 
 body {
-    --color-1: #6096B4;
-    --color-2: #E5FDD1;
-    --color-3: #C9F4AA;
-    --color-4: #FCC2FC;
     background-image: linear-gradient(white, #a4d0a473, #A4D0A4);
 }
 
 #title {
-    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size:50px;
 }
 
 
@@ -45,8 +42,8 @@ a:hover {
   }
 
 #Github-logo {
-    height: 26px;
-    width: 26px;
+    height: 2rem;
+    width: 2rem;
 }
 .card {
     border-style: solid;

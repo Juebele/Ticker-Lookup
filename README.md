@@ -1,63 +1,17 @@
-# Project-1
-Group Project 1 for Bootcamp
-
-## Project Requirements
-1. At least two server side APIs! (We will have a list of possible resources on resources as well!)
-2. Use a CSS framework (Bootstrap allowed!)
-3. Client side storage (it can be an extra + at the end. Localstorage does NOT have to be an absolute requirement!)
-4. Polished UI
-5. Good coding standards (indentation, variable names, functions, etc)
-6. Don't use alerts, confirms or prompts! (Look into Bootstrap or CSS modals)
-7. Deployed to Github pages!
-8. Interactive!
-9. (COLLABORATE WITH YOUR PEERS!)
-
 ## User Story
-As an investor 
-I want to see relevant data
-so that I can make more informed decisions. This gives new or old investers a platform to check out the latest stock options and features.
+>#### As an investor
+>#### I want to see financial data
+>#### So that I can make informed investment decisions 
 
 ## Acceptance Criteria
-Given that i need to look up different companies 
-When type in a ticker symbol for a specific company
-Then i get information from that company
+>#### GIVEN that I need to research different publicly-traded companies
+>#### WHEN I provide a ticker symbol for a specific company
+>#### THEN I get financial data for that company
 
 
-With these points in mind, in this project we will set our yourself up for future success by applying the core skills we've recently learned: Bootstrap, media queries, java and CSS,  variables. 
+## Guidelines for Use
+>### This website is pretty simple to use and only requires the user to type in a ticker symbol for a company that's listed on the stock exchange. Once the search button is clicked, the site will provide financial data for that particular company. An element on the page will also store the six most recent search terms for reference.
+>### The same process can be done to obtain the exchange rate from USD to a given foreign currency.
 
-
-* Project 1 Satisfies all of the above acceptance criteria.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository contains application code.
-
-### Application Quality: 15%
-
-* Application resembles the functionality provided in the Classroom settings instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme with description, screenshot, link to deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository that contains your code. Give the repository a unique name and include a README file that describes the project.
+## How does it work?
+>### When the search button is clicked, the user input is concattenated with a URL and then the site makes an API call specific to the requested ticker before returning financial data for that company. A very similar process is used to return foreign currency exchange rate data. Search terms are saved to local storage and populated to the "Recent Searches" box. These search terms are stored in an array which will delete the oldest search term once six ticker symbols have been searched.
