@@ -118,3 +118,5 @@ function fetchCurrency() {
     }
 
     window.onload = populateRecents()
+
+    //test
