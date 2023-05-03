@@ -7,10 +7,11 @@
     --color-2: #E5FDD1;
     --color-3: #C9F4AA;
     --color-4: #FCC2FC;
+    background-image: linear-gradient(white, red);
+
 }
 
 #title {
-    color:#fff;
     font-size: 50px;
 }
 
@@ -35,27 +36,6 @@ header img {
     min-width: 250px;
   }
 
-.light-class {
-    background-color: var(--color-1);
-    border-radius: 15px;
-    padding: 15px;
-    margin: 10px;
-}
-
-.pink-class {
-    background-color: var(--color-4)
-}
-
-.second-row {
-    border-style:solid;
-    border-width: 15px;
-}
-
-.first-row {
-    border-style:solid;
-    border-width: 15px;
-}
-
 .test-class {
     border-radius: 15px;
 }
@@ -79,25 +59,14 @@ a:hover {
   }
 
   .type-box {
-    background-color: #d3d3d3;
     border-radius: 15px;
     margin: 15px;
   }
 
   .second-card div{
-    background-color: #d3d3d3;
     padding: 10px;
   }
 
 .card img{
     border-radius: 15px;
-}
-
-/* .middle {
-    margin-top: 10px;
-    margin-bottom: 10px;
-} */
-
-.footer-card {
-    background-color: #EDE4E0;
 }
