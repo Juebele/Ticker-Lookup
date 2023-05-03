@@ -2,13 +2,12 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-:root {
+body {
     --color-1: #6096B4;
     --color-2: #E5FDD1;
     --color-3: #C9F4AA;
     --color-4: #FCC2FC;
-    background-image: linear-gradient(white, red);
-
+    background-image: linear-gradient(white, #a4d0a473, #A4D0A4);
 }
 
 #title {
@@ -68,5 +67,9 @@ a:hover {
   }
 
 .card img{
+    border-radius: 15px;
+}
+
+#image-box {
     border-radius: 15px;
 }
