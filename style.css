@@ -3,6 +3,7 @@
 }
 
 body {
+    min-height: 100vh;
     background-image: linear-gradient(white, #a4d0a473, #A4D0A4);
 }
 
@@ -41,7 +42,7 @@ a:hover {
     color: black;
   }
 
-#Github-logo {
+.Github-logo {
     height: 2rem;
     width: 2rem;
 }
