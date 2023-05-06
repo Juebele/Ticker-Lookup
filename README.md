@@ -23,8 +23,7 @@ When type in a ticker symbol for a specific company
 Then i get information from that company
 
 
-With these points in mind, in this project we will set our yourself up for future success by applying the core skills we've recently learned: Bootstrap, media queries, java and CSS,  variables. 
-
+With these points in mind, in this project we will set our yourself up for future success by applying the core skills we've recently learned: Bootstrap, media queries, java and CSS,  variables.
 
 * Project 1 Satisfies all of the above acceptance criteria.
 
